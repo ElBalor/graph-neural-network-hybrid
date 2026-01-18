@@ -1,0 +1,31 @@
+========================================
+HYBRID GNN-TRANSFORMER TRAINING RESULTS
+========================================
+
+Dataset: Devign (Full dataset: 21,854 samples)
+Model: HybridGraphCodeModel (GAT + CodeBERT)
+Training Configuration:
+  - Epochs: 25
+  - Batch Size: 4
+  - Gradient Accumulation Steps: 4
+  - Learning Rate: 1e-4 (GNN/Fusion) / 2e-5 (CodeBERT)
+  - Optimizer: AdamW
+  - Node Feature Dimension: 128
+  - Max Sequence Length: 256
+  - Mixed Precision (AMP): Enabled
+  - CodeBERT Freezing: Disabled (Full Fine-tuning)
+
+Best Model Results (at Epoch 24):
+  - Accuracy: 0.9104 (91.04%)
+  - Precision: 0.9410 (94.10%)
+  - Recall: 0.9041 (90.41%)
+  - F1-Score: 0.9226 (92.26%)
+
+Training Performance:
+- The model showed steady convergence over 25 epochs.
+- Fine-tuning CodeBERT provided significant gains over frozen feature extraction.
+- GAT layers successfully captured syntax patterns from AST graphs.
+- Attention-based fusion effectively integrated structural and semantic features.
+
+Final model saved to: checkpoints/best_model.pt
+========================================

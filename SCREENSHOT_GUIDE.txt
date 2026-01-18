@@ -1,0 +1,34 @@
+
+HOW TO GET PROJECT STRUCTURE SCREENSHOT:
+==========================================
+
+Option 1: Using File Explorer (Windows)
+1. Open File Explorer
+2. Navigate to: C:\Users\Heylel Yaka\Desktop\graph-neural-net-hybrid
+3. Press Windows key + Print Screen to take screenshot
+4. Or use Snipping Tool to capture just the folder view
+
+Option 2: Using PowerShell/Terminal
+1. Open PowerShell in the project directory
+2. Run: tree /F > project_structure.txt
+3. Open project_structure.txt and take screenshot
+4. Or run: Get-ChildItem -Recurse | Select-Object FullName | Out-File structure.txt
+
+Option 3: Using VS Code
+1. Open the project folder in VS Code
+2. The file explorer sidebar shows the structure
+3. Take screenshot of the sidebar
+
+RECOMMENDED: Show the following structure:
+graph-neural-net-hybrid/
+├── models.py
+├── dataset.py
+├── train.py
+├── requirements.txt
+├── create_appendix.py
+├── generate_visualizations.py
+├── APPENDIX_SOURCE_CODE.docx
+├── data/
+│   └── devign_data.csv
+└── (other files)
+

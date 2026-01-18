@@ -1,0 +1,21 @@
+
+HOW TO GET SOURCE CODE SCREENSHOTS:
+====================================
+
+Recommended Files to Screenshot:
+1. models.py - Show the HybridGraphCodeModel class (lines 87-132)
+2. dataset.py - Show build_sequence_graph_from_code function (lines 41-67)
+3. train.py - Show train_one_epoch and evaluate functions (lines 45-111)
+
+Steps:
+1. Open each file in VS Code or your editor
+2. Navigate to the key section
+3. Use Windows Snipping Tool (Win + Shift + S) or Print Screen
+4. Capture with syntax highlighting visible
+5. Save as: models_screenshot.png, dataset_screenshot.png, train_screenshot.png
+
+Tips:
+- Use light theme for better printing
+- Include line numbers
+- Show function definitions clearly
+- Keep consistent sizing across screenshots
